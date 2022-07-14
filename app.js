@@ -20,14 +20,14 @@ class Blog {
         editbtn.setAttribute("id","edit-button")
         editbtn.setAttribute("class","button")
         editbtn.innerText = "Edit";
-        buttondiv.appendChild(document.createElement("a").appendChild(editbtn))
+        buttondiv.appendChild(editbtn)
     }
     addDelete(buttondiv){
         let deletebtn = document.createElement("button")
         deletebtn.setAttribute("id","delete-button")
         deletebtn.setAttribute("class","button")
         deletebtn.innerText = "Delete";
-        buttondiv.appendChild(document.createElement("a").appendChild(deletebtn))
+        buttondiv.appendChild(deletebtn)
     }
 }
 
