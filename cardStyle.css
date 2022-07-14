@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+.head{
+	margin: 30px;
+}
+
 body {
 	font-family: 'Nunito Sans';
 }
@@ -37,6 +41,29 @@ nav ul a {
 	justify-content: center;
 	align-items: center;
 	width: 186px;
+	margin: 20px;
+	height: 40px;
+	background: #6C63FF;
+	border-radius: 4px;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+.card-buttons{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.card-buttons .button{
+	/*display: flex;
+	justify-content: center;*/
+	align-items: center;
+	width: 100px;
+	margin: 20px;
 	height: 40px;
 	background: #6C63FF;
 	border-radius: 4px;
@@ -67,10 +94,15 @@ nav ul a {
 }
 
 .article-card {
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px;
 	width: 320px;
 	margin: 30rem 0;
 	display: flex;
 	flex-wrap: wrap;
+	margin:20px;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -93,8 +125,7 @@ nav ul a {
 }
 .body-div2 {
 	display: flex;
-	flex-direction: row ;
-	/* justify-content: space-between; */
+	flex-flow: row wrap;
 	float: left;
 }
 
@@ -130,6 +161,7 @@ div#popupContact {
 	display: none;
 	flex-direction: column;
 	position: absolute;
+	margin-top: 40px;
 	left: 45%;
 	top: 17%;
 	margin-left: -400px;
